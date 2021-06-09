@@ -1,0 +1,52 @@
+<snippet>
+    <content><![CDATA[
+template <typename T1, typename T2>
+istream& operator>>(istream& in, pair<T1, T2>& a) {
+    in >> a.first >> a.second;
+    return in;
+}
+template <typename T1, typename T2>
+ostream& operator<<(ostream& out, pair<T1, T2>& a) {
+    out << a.first << " " << a.second;
+    return out;
+}
+template <class A, size_t S>
+istream& operator>>(istream& in, array<A, S>& a) {
+    for (A& x : a) in >> x;
+    return in;
+}
+template <class A, size_t S>
+ostream& operator<<(ostream& out, array<A, S>& a) {
+    bool f = false;
+    for (A& x : a) {
+        if (f) out << " ";
+        out << x;
+        f = true;
+    }
+    return out;
+}
+template <typename T>
+istream& operator>>(istream& in, vector<T>& a) {
+    for (T& x : a) in >> x;
+    return in;
+}
+template <typename T>
+ostream& operator<<(ostream& out, vector<T>& a) {
+    bool f = false;
+    for (T& x : a) {
+        if (f) out << " ";
+        out << x;
+        f = true;
+    }
+    return out;
+}
+void out(bool ok, bool cap = true) {
+    if (cap) cout << (ok ? "YES" : "NO") << '\n';
+    else cout << (ok ? "Yes" : "No") << '\n';
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>io</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

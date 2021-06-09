@@ -1,0 +1,16 @@
+[
+    { "keys": ["ctrl+b"], "command": "cancel_build" },
+    { "keys": ["ctrl+shift+,"], "command": "run_multiple_commands",
+      "args": {
+        "commands": [
+            {"command": "add_date"},
+            {"command": "run_macro_file",
+              "args": {
+                "file": "res://Packages/User/cpp_basic.sublime-macro"
+              }
+            }
+        ]
+      }
+    }
+    
+]

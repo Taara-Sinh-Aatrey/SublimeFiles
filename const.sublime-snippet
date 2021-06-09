@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+const int mod = 1e9 + 7;
+const int INF = 1e18L + 5;
+const int N = 2e5 + 5;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>const</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

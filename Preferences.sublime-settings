@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"font_face": "Source Code Pro Regular",
+	"font_options":
+	[
+		"no_italic"
+	],
+	"font_size": 16,
+	"ignored_packages":
+	[
+	],
+	"open_files_in_new_window": false,
+	"save_on_focus_lost": true,
+	"tab_size": 4,
+	"theme": "Material-Theme-Palenight.sublime-theme",
+	"translate_tabs_to_spaces": true,
+}
