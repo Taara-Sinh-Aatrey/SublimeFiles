@@ -11537,6 +11537,16 @@
 				]
 			],
 		},*/
+		"/home/aatrey/Contests/CC/2021-06_LongChallenge/DUALDIST.cpp":
+		{
+			"0xa8d55261":
+			[
+				[
+					124,
+					1591
+				]
+			],
+		},
 	},
 	"selections":
 	{
@@ -24498,8 +24508,8 @@
 			"0x57600cf2":
 			[
 				[
-					8564,
-					8950
+					8349,
+					8349
 				]
 			],
 		},
@@ -28618,8 +28628,8 @@
 			"0xa8d55261":
 			[
 				[
-					782,
-					782
+					1591,
+					1591
 				]
 			],
 		},
@@ -28670,6 +28680,43 @@
 				[
 					2842,
 					2842
+				]
+			],
+		},
+		"/home/aatrey/.config/sublime-text-3/Packages/User/lca.sublime-snippet":
+		{
+			/*"0x58242eeb":
+			[
+				[
+					431,
+					431
+				]
+			]*/
+			"0x4f69fdd7":
+			[
+				[
+					929,
+					929
+				]
+			],
+		},
+		"/home/aatrey/.config/sublime-text-3/Packages/User/.gitignore":
+		{
+			"0xaec32767":
+			[
+				[
+					29,
+					29
+				]
+			],
+		},
+		"/home/aatrey/.config/sublime-text-3/Packages/User/automate.sublime-build":
+		{
+			"0xb40ffd9d":
+			[
+				[
+					76,
+					76
 				]
 			],
 		},
