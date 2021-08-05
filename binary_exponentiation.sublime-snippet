@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-int Pow(int a, int b){
+int Pow(int a, int b, int P = mod){
     int res = 1;
     while(b > 0) {
-        if(b & 1) res = res * a % mod;
-        a = a * a % mod;
+        if(b & 1) res = res * a % P;
+        a = a * a % P;
         b >>= 1;
     }
     return res;

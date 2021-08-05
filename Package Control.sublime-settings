@@ -8,10 +8,16 @@
 		"A File Icon",
 		"AutoFoldCode",
 		"CppFastOlympicCoding",
-		"Material Theme",
+		"Git",
+		"Horizontal Scroll",
+		"LSP",
+		"Non Text Files",
+		"OverrideAudit",
 		"Package Control",
-		"RemoteCollab",
-		"Smart Match",
-		"SublimeAStyleFormatter",
+		"Terminus",
+	],
+	"repositories":
+	[
+		"https://raw.githubusercontent.com/STealthy-and-haSTy/SublimePackages/master/unreleased-packages.json"
 	],
 }

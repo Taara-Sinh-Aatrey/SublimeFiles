@@ -1,0 +1,14 @@
+{
+	"clients":
+	{
+		"clangd":
+		{
+			"enabled": true,
+			"command": [
+        		"clangd"
+			],
+      		"selector": "source.c | source.c++ | source.cc",
+      		"auto_complete_selector": "punctuation.accessor | (meta.preprocessor.include string - punctuation.definition.string.end)",
+		},
+	},
+}
