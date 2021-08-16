@@ -1,0 +1,15 @@
+{
+	"clients":
+	{
+		"clangd":
+		{
+			"enabled": false,
+			// "log_stderr": true,
+			// "command": [
+			// 	"C:\\Program Files\\LLVM\\bin\\clangd", "-log=verbose"
+		 //    ],
+		 //    "selector": "source.c | source.c++ | source.objc | source.objc++",
+		 //    "auto_complete_selector": "punctuation.accessor | (meta.preprocessor.include string - punctuation.definition.string.end)",
+		},
+	},
+}
