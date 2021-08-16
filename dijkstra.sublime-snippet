@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+vector<int> d(n, INF);
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+pq.emplace(0, 0);
+d[0] = 0;
+
+while(!pq.empty()) {
+    auto [dis, u] = pq.top();
+    pq.pop();
+    
+    if(dis > d[u]) continue;
+    
+    for(auto& v : g[u]) {
+        if(d[u] + 1 < d[v]) {
+            pq.emplace(d[v], v);
+            d[v] = d[u] + 1;
+        }
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dijkstra</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

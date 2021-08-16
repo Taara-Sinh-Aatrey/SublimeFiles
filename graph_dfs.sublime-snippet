@@ -1,9 +1,18 @@
 <snippet>
     <content><![CDATA[
-vector<vector<${1:int}>>
+vector<bool> vis(n);
+function<void(int)> dfs = [&](int u) {
+    vis[u] = true;
+    
+    for(auto& v : g[u]) {
+        if(vis[v]) continue;
+        dfs(v);
+    }    
+};
+dfs(0);
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>vvi</tabTrigger>
+    <tabTrigger>graph_dfs</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
