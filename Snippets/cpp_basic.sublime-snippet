@@ -34,7 +34,6 @@ signed main()
     ${1:}cin >> t;
 
     for (int tt = 1; tt <= t; tt++) {
-        cout << "Case #" << tt << ": ";
         solve();
     \}
     

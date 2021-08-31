@@ -1,5 +1,12 @@
 <snippet>
     <content><![CDATA[
+/*
+    
+Dependencies:
+Sieve
+
+*/ 
+
 // no of integers in [l, r] which are coprime with n
 int coprime(int n, int l, int r) {
     vector<int> p;
@@ -15,20 +22,21 @@ int coprime(int n, int l, int r) {
     }
 
     int sum = 0;
-    for (int msk=1; msk<(1<<p.size()); ++msk) {
-        int mult = 1,
-            bits = 0;
-        for (int i=0; i<(int)p.size(); ++i)
-            if (msk & (1<<i)) {
-                ++bits;
+    for (int mask = 1; mask < 1 << p.size(); mask++) {
+        int mult = 1, bits = 0;
+        for (int i = 0; i < p.size(); i++)
+            if (mask >> i & 1) {
+                bits ^= 1;
                 mult *= p[i];
             }
 
         int cur = r / mult - (l - 1) / mult;
-        if (bits % 2 == 1)
+        if (bits & 1) {
             sum += cur;
-        else
+        }
+        else {
             sum -= cur;
+        }
     }
 
     return r - l + 1 - sum;

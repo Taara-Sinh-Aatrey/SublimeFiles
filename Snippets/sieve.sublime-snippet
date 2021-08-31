@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
 vector<int> spf(N, 0);
-// vector<int> unique_primes(N, 0);
+${1:vector<int> unique_primes(N, 0);}
 vector<bool> prime(N, true);
 vector<int> primes;
 void sieve() {
-    ${1:prime[0] = prime[1] = false;
+    prime[0] = prime[1] = false;
     for(int i = 2; i < N; i++) {
         if(prime[i]) {
             spf[i] = i;
@@ -17,14 +17,14 @@ void sieve() {
             prime[prod] = false;
         \}
     \}
-    // for(int i = 2; i < N; i++) {
-    //     int p = spf[i];
-    //     unique_primes[i] = unique_primes[i / p] + ((i / p) % p != 0);
-    // \}}
+    ${2:for(int i = 2; i < N; i++) {
+        int p = spf[i];
+        unique_primes[i] = unique_primes[i / p] + ((i / p) % p != 0);
+    \}}
 \}
 
-vector<pair<int, int>> factorise(int num) {
-    ${2:vector<pair<int, int>> factors;
+${3:vector<pair<int, int>> factorise(int num) {
+    vector<pair<int, int>> factors;
     while(num > 1) {
         int factor = spf[num];
         int cnt = 0;
@@ -34,8 +34,8 @@ vector<pair<int, int>> factorise(int num) {
         \}
         factors.emplace_back(factor, cnt);
     \}
-    return factors;}
-\};$0
+    return factors;
+\};}$0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>sieve</tabTrigger>
