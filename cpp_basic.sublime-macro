@@ -5,7 +5,7 @@
     {
         "command": "insert_snippet",
         "args": {
-            "name": "Packages/User/cpp_basic.sublime-snippet"
+            "name": "Packages/User/Snippets/cpp_basic.sublime-snippet"
         }
     },
     {
