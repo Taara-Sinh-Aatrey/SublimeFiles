@@ -6,7 +6,7 @@
 		"no_italic", 
 	],
 	"font_size": 14,
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
@@ -28,5 +28,5 @@
 	    "*.pdf"
 	],
 	"ignored_snippets": ["C++/*"],
-	"open_files_in_new_window": true,
+	/*"open_files_in_new_window": true,*/
 }
