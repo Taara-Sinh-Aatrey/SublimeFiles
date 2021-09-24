@@ -1,16 +1,23 @@
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[        
 Commands:
 increase stack size to 1GB in linux: ulimit -u 1048576
 command to see resources used by your program: /usr/bin/time -v sol.out <in >out
 
-Tricks:
+Bit manipulation:
 x | (x + 1) sets lowest unset bit of x
 x & (x - 1) unsets lowest set bit of x
 x - 1 unsets the lowest set bit and sets all bits on its right
+
+GDB(find line number causing seg fault):
+dbrun sol
+gdb ./sol.out
+run (Or, r)
+backtrace
+
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>notes</tabTrigger>
+    <tabTrigger>snippet_notes</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.python</scope> -->
+    <scope>source.c++</scope>
 </snippet>

@@ -115,7 +115,7 @@ bool inside_triangle(const point &x, const point &a, const point &b, const point
 const long double D_INF = 1e100;
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>neal_wu_point</tabTrigger>
+    <tabTrigger>snippet_neal_wu_point</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

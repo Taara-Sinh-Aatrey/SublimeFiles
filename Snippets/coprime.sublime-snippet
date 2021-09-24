@@ -44,7 +44,7 @@ int coprime(int n, int l, int r) {
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>coprime</tabTrigger>
+    <tabTrigger>snippet_coprime</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

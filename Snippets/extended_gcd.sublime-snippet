@@ -16,7 +16,7 @@ tuple<int, int, int> extended_gcd(int a, int b) {
 }
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>extended_gcd</tabTrigger>
+    <tabTrigger>snippet_extended_gcd</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

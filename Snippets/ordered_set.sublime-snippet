@@ -8,7 +8,7 @@ template <typename T> using oset = tree<T, null_type, less<T>, rb_tree_tag, tree
 // less_equal for multiset
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>ordered_set</tabTrigger>
+    <tabTrigger>snippet_ordered_set</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

@@ -2,7 +2,7 @@
     "target": "terminus_exec",
     "cancel": "terminus_cancel_build",
     "linux": {
-        "shell_cmd": "g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}\".out -DLOCAL -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && ./\"${file_base_name}\".out",
+        "shell_cmd": "dbrun \"${file_base_name}\"",
     },
     "windows": {
         "shell_cmd": "g++ -std=c++17 -Wshadow -Wall \"${file}\" -o  \"${file_base_name}\" \"-Wl,--stack=268435456\" -DLOCAL -g -D_GLIBCXX_DEBUG &&  \"${file_base_name}\"",
@@ -16,7 +16,7 @@
         {
             "name":"Fast Compile And Run",
             "linux": {
-                "shell_cmd": "g++ -std=c++17 \"${file}\" -o \"${file_base_name}\".out -DLOCAL -O2 && ./\"${file_base_name}\".out",
+                "shell_cmd": "run \"${file_base_name}\"",
             },
             "windows": {
                 "shell_cmd": "g++ -std=c++17 \"${file}\" -o \"${file_base_name}\" \"-Wl,--stack=268435456\" -DLOCAL -O2 && \"${file_base_name}\"",

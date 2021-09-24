@@ -5,7 +5,7 @@ sys.stdin = open('in', 'r')
 sys.stdout = open('out', 'w')
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>python_basic</tabTrigger>
+	<tabTrigger>snippet_python_basic</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

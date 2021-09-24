@@ -1,0 +1,22 @@
+[
+    { "caption": "-", "id": "folder_commands" },
+
+    { 
+        "caption": "Open in Terminus", 
+        "command": "open_in_terminus", 
+        "args": {
+            "panel": true,
+            "dirs": []
+        } 
+    },
+    
+    // { 
+    //     "caption": "Open in Terminus (Tab)", 
+    //     "command": "open_in_terminus", 
+    //     "args": {
+    //         "panel": false,
+    //         "dirs": []
+    //     } 
+    // },
+
+]

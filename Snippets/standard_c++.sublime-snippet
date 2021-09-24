@@ -25,7 +25,7 @@ signed main() {
 }
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>standard_c++</tabTrigger>
+    <tabTrigger>snippet_standard_c++</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

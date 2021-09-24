@@ -314,7 +314,7 @@ using namespace splay_tree;
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>splay_tree</tabTrigger>
+    <tabTrigger>snippet_splay_tree</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
