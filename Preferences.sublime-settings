@@ -4,14 +4,13 @@
 	[
 		"no_italic", 
 	],
-	"font_size": 13,
+	"font_size": 16,
 	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
-	// "auto_hide_menu": true,
-	"auto_complete_use_history": true,
+	
 	"ignored_packages":
 	[
 		"Vintage",
@@ -29,9 +28,8 @@
 	"animation_enabled": false,
 	/*"open_files_in_new_window": true,*/
 	
-	// atom theme
-	"color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
-	"theme": "One Dark.sublime-theme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"theme": "Material-Theme.sublime-theme",
 	
 	// atom recommended settings 
 	"caret_extra_bottom": 1,
@@ -46,7 +44,7 @@
 	"margin": 0,
 	"match_selection": false,
 	"tree_animation_enabled": false,
-	"scroll_past_end": false,
+	// "scroll_past_end": false,
 	"show_definitions": false,
 	"show_tab_close_buttons": true, // Mandatory if you want to see unsaved files in tab
 	
@@ -55,4 +53,13 @@
 	"one_dark_show_tabs_dropdown": true,       // Only for Sublime Text 3
 	"one_dark_bigger_sidebar": true,          // Uses font-size 14 for the sidebar
 	"one_dark_sidebar_font_fira_light": true, // Uses Fira Light for the sidebar
+	"material_theme_accent_orange": true,
+	
+	"material_theme_small_statusbar": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_bullet_tree_indicator": true,
+	"material_theme_arrow_folders": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_small_tab": true,
 }

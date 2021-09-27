@@ -15,6 +15,26 @@ gdb ./sol.out
 run (Or, r)
 backtrace
 
+Optimisation Techniques:
+1 - assign an empty container instead of clearing it
+    vector<int> v;
+    Nope: 
+        v.clear();
+    Yep: 
+        v = new vector<int>();
+
+2 - Keep a reference to those container's state which doesn't support O(1) access
+    map<int, int> mp;
+    Nope:
+        mp[x]++;
+        a = mp[x] * (mp[x] - 1) / 2;
+        we accessed mp[x] three times, so it searched for x in mp all those three times
+    Yep:
+        auto &val = mp[x];
+        val++;
+        a = val * (val - 1) / 2;
+        here we searched for x in mp only once
+    
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>snippet_notes</tabTrigger>
