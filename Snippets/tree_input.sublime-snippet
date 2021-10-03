@@ -12,7 +12,7 @@ for(int i = 0; i < n - 1; i++) {
 }
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>tree_input</tabTrigger>
+    <tabTrigger>snippet_tree_input</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
