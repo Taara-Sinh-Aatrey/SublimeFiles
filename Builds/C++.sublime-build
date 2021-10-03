@@ -1,6 +1,16 @@
-{ 
+{      
+    "target": "terminus_open",
+    "auto_close": false,
+    /*
     "target": "terminus_exec",
     "cancel": "terminus_cancel_build",
+    "focus": true,
+    */
+    "timeit": false,
+    "title": "C++ Build Output",
+    "post_window_hooks": [
+        ["carry_file_to_pane", {"direction": "right"}]   
+    ],
     "linux": {
         "shell_cmd": "dbrun \"${file_base_name}\"",
     },

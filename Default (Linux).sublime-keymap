@@ -1,11 +1,13 @@
 [
-    { "keys": ["ctrl+,"], "command": "toggle_terminus_panel",
+    { "keys": ["ctrl+,"], "command": "competitive_programming_helper", 
+      "args": { "cwd": "${file_path:${folder}}" }
+    },
+    
+    { "keys": ["ctrl+alt+,"], "command": "toggle_terminus_panel",
       "args": { "cwd": "${file_path:${folder}}" }
     }, 
-    {
-        "keys": ["ctrl+alt+,"], "command": "terminus_open", "args": {
-            "cwd": "${file_path:${folder}}"
-        }
+    { "keys": ["ctrl+,"], "command": "terminus_open", 
+      "args": { "cwd": "${file_path:${folder}}" }
     },
     { "keys": ["ctrl+w"], "command": "terminus_close",
       "context": [{"key": "terminus_view"}]
@@ -23,30 +25,29 @@
     { "keys": ["f7"], "command": "build", "args": {"variant": ""} },
     { "keys": ["f8"], "command": "build", "args": {"variant": "Fast Compile And Run"} },
     
-    /*
-    to navigate up and down fastly
+    
+    // to navigate up and down fastly
     { "keys": ["alt+up"], "command": "move_by_amount",
       "args": {"by": "lines", "amount": 5, "forward": false}
     },
     { "keys": ["alt+down"], "command": "move_by_amount",
       "args": {"by": "lines", "amount": 5, "forward": true}
     },
-    */
     
-    /*
-    a failed attempt to run  fast olympic coding with different compilation variants
-    { "keys": ["ctrl+shift+r"], "command": "chain",
-        "args": {
-            "commands": [
-                {"command": "build", "args": {"variant": ""}},
-                {"command": "view_tester",
-                    "args": {
-                        "action": "make_opd",
-                        "use_debugger": false
-                    }
-                }
-            ]
-        }
-    },
-    */
+    // copied here because the origami one was not working
+    // here working since user overwrites has more priority
+    { "keys": ["ctrl+k", "up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+k", "right"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+k", "down"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+k", "left"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+k", "ctrl+up"], "command": "create_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+k", "ctrl+right"], "command": "create_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+k", "ctrl+down"], "command": "create_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+k", "ctrl+left"], "command": "create_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+k", "ctrl+shift+up"], "command": "destroy_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+k", "ctrl+shift+right"], "command": "destroy_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+k", "ctrl+shift+down"], "command": "destroy_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+k", "ctrl+shift+left"], "command": "destroy_pane", "args": {"direction": "left"} },
 ]
