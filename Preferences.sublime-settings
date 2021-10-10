@@ -68,4 +68,5 @@
 	"material_theme_arrow_folders": true,
 	"material_theme_compact_sidebar": true,
 	"material_theme_small_tab": true,
+	"word_wrap": "true",
 }
