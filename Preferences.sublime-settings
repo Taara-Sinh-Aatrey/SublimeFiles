@@ -5,7 +5,7 @@
 	[
 		"no_italic", 
 	],
-	"font_size": 14,
+	"font_size": 15,
 	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
 	"tab_size": 4,
@@ -18,19 +18,15 @@
 	],
 	"open_externally_patterns": 
 	[
-	    "*.jpg",
-	    "*.jpeg",
-	    "*.png",
-	    "*.gif",
-	    "*.zip",
-	    "*.pdf"
+	    "*.jpg", "*.jpeg", "*.png", "*.gif", "*.zip", "*.pdf"
 	],
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".Trash", ".Trash-*", "*.out.dSYM"],
 	"file_exclude_patterns": 
 	[
-	    "*.class",
-	    "*.out",
+		"*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", "*.DS_Store", ".directory", "desktop.ini", "*.class", "*.psd", "*.db", "*.sublime-workspace", "*.out",
 	],
 	"ignored_snippets": ["C++/*"],
+	"show_panel_on_build": false,
 	"animation_enabled": false,
 	/*"open_files_in_new_window": true,*/
 	
@@ -50,17 +46,11 @@
 	"margin": 0,
 	"match_selection": true,
 	"tree_animation_enabled": false,
-	// "scroll_past_end": false,
+	"scroll_past_end": true,
 	"show_definitions": false,
 	"show_tab_close_buttons": true, // Mandatory if you want to see unsaved files in tab
 	
-	// atom optional settings
-	"one_dark_show_scroll_tabs": true,        // Only for Sublime Text 3
-	"one_dark_show_tabs_dropdown": true,       // Only for Sublime Text 3
-	"one_dark_bigger_sidebar": true,          // Uses font-size 14 for the sidebar
-	"one_dark_sidebar_font_fira_light": true, // Uses Fira Light for the sidebar
 	"material_theme_accent_orange": true,
-	
 	"material_theme_small_statusbar": true,
 	"material_theme_accent_scrollbars": true,
 	"material_theme_contrast_mode": true,
@@ -68,4 +58,5 @@
 	"material_theme_arrow_folders": true,
 	"material_theme_compact_sidebar": true,
 	"material_theme_small_tab": true,
+	"word_wrap": "true",
 }

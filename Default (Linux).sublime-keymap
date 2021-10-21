@@ -1,14 +1,28 @@
 [
-    { "keys": ["ctrl+,"], "command": "competitive_programming_helper", 
-      "args": { "cwd": "${file_path:${folder}}" }
+    {
+      "keys": ["ctrl+alt+backspace"], "command": "delete_current_file"
     },
-    
     { "keys": ["ctrl+alt+,"], "command": "toggle_terminus_panel",
       "args": { "cwd": "${file_path:${folder}}" }
     }, 
     { "keys": ["ctrl+,"], "command": "terminus_open", 
-      "args": { "cwd": "${file_path:${folder}}" }
+      "args": { "cwd": "${file_path:${folder}}" } 
     },
+    { "keys": ["ctrl+k", "ctrl+m"], "command": "toggle_menu", },
+    { "keys": ["ctrl+k", "ctrl+s"], "command": "toggle_status_bar", },
+    { "keys": ["ctrl+k", "ctrl+t"], "command": "toggle_tabs", },
+    { "keys": ["ctrl+k", "ctrl+w"], "command": "toggle_setting", 
+      "args": { "setting": "word_wrap"}},
+    // { "keys": ["shift+f11"], "command": "chain",
+    //   "args": {
+    //     "commands": [
+    //       { "command": "terminus_open", 
+    //         "args": { "cwd": "${file_path:${folder}}" }
+    //       },
+    //       { "command": "toggle_side_bar"}
+    //     ]
+    //   }
+    // },
     { "keys": ["ctrl+w"], "command": "terminus_close",
       "context": [{"key": "terminus_view"}]
     }, 

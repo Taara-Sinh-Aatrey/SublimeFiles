@@ -1,3 +1,4 @@
+*.DS_Store*
 AutoFoldCode.sublime-settings
 LSP.sublime-settings
 Package Control.sublime-settings

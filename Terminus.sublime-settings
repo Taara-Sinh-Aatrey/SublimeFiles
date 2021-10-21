@@ -1,6 +1,6 @@
 {
     
-	"theme": "hardcore",
+	"theme": "default",
     "shell_configs": [
         {
             "name": "Bash",
