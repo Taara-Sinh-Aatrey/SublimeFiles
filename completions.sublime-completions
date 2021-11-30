@@ -6,6 +6,8 @@
         "vector",
         "emplace",
         "insert",
+        "63 - __builtin_clzll(",
+        "__builtin_ctzll(",
         // ""
         {
             "trigger": "all",
@@ -15,24 +17,24 @@
         },
         {
             "trigger": "pre",
-            "annoataion": "pre", 
+            "annoataion": "prev", 
             "contents": "prev(${1:v}.end())",  
             "kind": "snippet",
         },
         {
+            "trigger": "precision",
+            "annoataion": "setprecision", 
+            "contents": "cout << fixed << setprecision(20);",
+            "kind": "snippet",
+        },    
+        {
             "trigger": "*pre",
-            "annoataion": "pre", 
+            "annoataion": "prev", 
             "contents": "*prev(${1:v}.end())",  
             "kind": "snippet",
         },
         {
-            "trigger": "lambda",
-            "annoataion": "lambda", 
-            "contents": "function<${1:void}(${2:int})> doit = [&](${2:int}) -> ${1:void} {$0};",  
-            "kind": "snippet",
-        },
-        {
-            "trigger": "if",
+            "trigger": "lam",
             "annoataion": "lambda", 
             "contents": "function<${1:void}(${2:int})> doit = [&](${2:int}) -> ${1:void} {$0};",  
             "kind": "snippet",

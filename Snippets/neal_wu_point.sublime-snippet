@@ -39,7 +39,15 @@ struct point {
     }
 
     friend ostream& operator<<(ostream &os, const point &p) {
-        return os << '(' << p.x << ", " << p.y << ')';
+        return os << '{' << p.x << ", " << p.y << '}';
+    }
+    
+    friend istream& operator>>(istream &is, point &p) {
+        return is >> p.x >> p.y;
+    }
+    
+    bool operator< (const point &other) const {
+        return tie(x, y) < tie(other.x, other.y);
     }
 };
 

@@ -23,18 +23,34 @@ void sieve() {
     \}}
 \}
 
-${3:vector<pair<int, int>> factorise(int num) {
-    vector<pair<int, int>> factors;
+${3:void prime_factorise(int num, vector<pair<int, int>> &prime_factors) {
     while(num > 1) {
         int factor = spf[num];
         int cnt = 0;
         while(spf[num] == factor) {
-            num /= spf[num];
+            num /= factor;
             cnt++;
         \}
-        factors.emplace_back(factor, cnt);
+        prime_factors.emplace_back(factor, cnt);
     \}
-    return factors;
+\};
+
+void factorise(int num, vector<int> &factors) {
+    factors.emplace_back(1);
+    while(num > 1) {
+        int factor = spf[num];
+        int cnt = 0;
+        int p = 1;
+        int sz = factors.size();
+        while(spf[num] == factor) {
+            num /= factor;
+            p *= factor;
+            for (int i = 0; i < sz; i++) {
+                factors.emplace_back(factors[i] * p);
+            \}
+            cnt++;
+        \}
+    \}
 \};}$0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

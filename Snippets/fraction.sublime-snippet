@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+struct fraction {
+    int num, den;
+    
+    fraction () : num(0), den(1) {}
+     
+    fraction (int _num, int _den) : num(_num), den(_den) {}
+    
+    bool operator< (const fraction &other) const {
+        return num * other.den < other.num * den;
+    }
+    
+    bool operator<= (const fraction &other) const {
+        return num * other.den <= other.num * den;
+    }
+    
+    bool operator> (const fraction &other) const {
+        return num * other.den > other.num * den;
+    }
+    
+    bool operator>= (const fraction &other) const {
+        return num * other.den >= other.num * den;
+    }
+    
+    friend ostream& operator<< (ostream &os, const fraction &f) {
+        // return os << f.num << "/" << f.den << "=" << (long double) f.num / f.den;
+        return os << (long double) f.num / f.den;
+    }
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>snippet_fraction</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
