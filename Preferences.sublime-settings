@@ -30,8 +30,8 @@
 	"animation_enabled": false,
 	/*"open_files_in_new_window": true,*/
 	
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"theme": "Material-Theme.sublime-theme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"theme": "Material-Theme-Palenight.sublime-theme",
 	
 	// atom recommended settings 
 	"caret_extra_bottom": 1,

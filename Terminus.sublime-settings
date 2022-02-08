@@ -1,6 +1,6 @@
 {
     
-	"theme": "default",
+	"theme": "adaptive",
     "shell_configs": [
         {
             "name": "Bash",
