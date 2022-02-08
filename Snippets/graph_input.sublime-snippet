@@ -1,12 +1,11 @@
 <snippet>
     <content><![CDATA[
 int n, m;
-cin >> n >> m;
-
+scan(n, m);
 vector<vector<int>> g(n);
 for(int i = 0; i < m; i++) {
     int u, v;
-    cin >> u >> v, --u, --v;
+    scan(u, v), --u, --v;
     g[u].emplace_back(v);
     g[v].emplace_back(u);
 }

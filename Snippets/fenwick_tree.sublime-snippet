@@ -4,24 +4,21 @@ class fenwick {
 public:
     int n;
     vector<int> tree;
-    // original array should follow 0 based indexing
-    fenwick() {
+    // original array may follow 0 based indexing
+    fenwick() {}
 
-    }
-
-    fenwick(int _n) {
-        n = _n;
+    fenwick(int _n) : n(_n) {
         tree.resize(n + 1, 0);
     }
 
-    fenwick(vector<int>& arr) {
-        n = arr.size();
+    fenwick(vector<int> &a) {
+        n = int(a.size());
         tree.resize(n + 1, 0);
-        for(int i = 0; i < n; i++) {
-            modify(i, arr[i]);
-        }
+        for(int i = 0; i < n; i++)
+            modify(i, a[i]);
     }
-
+    
+    // increments the value of idx by val
     void modify(int idx, int val) {
         idx += 1;
         while(idx <= n) {
@@ -30,6 +27,7 @@ public:
         }
     } 
 
+    // returns the sum of a[0..idx]
     int get(int idx) {
         idx += 1;
         int ret = 0;
@@ -39,8 +37,12 @@ public:
         }
         return ret;
     }
-};
-]]></content>
+    
+    // returns the sum of a[L..R]
+    int get(int L, int R) {
+        return get(R) - get(L - 1);
+    }
+};]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>snippet_fenwick_tree</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

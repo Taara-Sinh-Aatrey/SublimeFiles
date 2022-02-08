@@ -1,14 +1,14 @@
 <snippet>
     <content><![CDATA[
 vector<int> p(n), d(n);
-function<void(int, int)> dfs = [&](int u, int par) {
+function<void(int, int)> dfs = [&] (int u, int par) {
     p[u] = par;
     d[u] = par == -1 ? 0 : d[par] + 1;
-    
     for(auto& v : g[u]) {
-        if(v == par) continue;
+        if(v == par) 
+            continue;
         dfs(v, u);
-    }    
+    }
 };
 dfs(0, -1);
 ]]></content>

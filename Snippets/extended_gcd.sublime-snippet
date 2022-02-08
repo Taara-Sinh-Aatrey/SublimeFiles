@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 /*
-a * s + b * t = __gcd(a, b) = g
+a * s + b * t = gcd(a, b) = g
 auto [g, s, t] = extended_gcd(a, b);
 */
 tuple<int, int, int> extended_gcd(int a, int b) {

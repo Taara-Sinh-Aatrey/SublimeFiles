@@ -32,7 +32,7 @@ signed main() {
     cin.tie(0);
     cout.tie(0);
     int t = 1;
-    ${1:cin >> t;}
+    ${1:scan(t);}
     for (int tt = 1; tt <= t; tt++) {
         solve();
     }

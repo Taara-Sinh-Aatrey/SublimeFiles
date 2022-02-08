@@ -1,9 +1,8 @@
 <snippet>
     <content><![CDATA[
 vector<bool> vis(n);
-function<void(int)> dfs = [&](int u) {
+function<void(int)> dfs = [&] (int u) {
     vis[u] = true;
-    
     for(auto& v : g[u]) {
         if(vis[v]) continue;
         dfs(v);
