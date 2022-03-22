@@ -168,7 +168,9 @@ constexpr int32_t md = 1e9 + 7;
 // constexpr int32_t md = 998244353;
 using Mint = Modular<std::integral_constant<decay<decltype(md)>::type, md>>;
 
-${2:vector<Mint> fact(1, 1);
+${2:void dbg_print(const Mint &x) { cerr << x(); \}
+
+vector<Mint> fact(1, 1);
 vector<Mint> inv_fact(1, 1);
 
 Mint C(int n, int k) {
